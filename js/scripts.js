@@ -3,20 +3,26 @@ var array = [];
 var vowels = ["a", "e", "o", "u", "i"]
 // count numbers
 function countsByOne(userInputStop, userInputCount) {
-  for (var i = 0; i <= userInputStop; i += userInputCount) {
-    array.push(i);
-  };
+  if () {
+
+  } else {
+    for (var i = 0; i <= userInputStop; i += userInputCount) {
+      array.push(i);
+    };
+
+  }
 };
+
+
 
 // Word puzzle function
 function removeVowels(sentence) {
   var sentenceArray = sentence.split('');
     for (var i = 0; i < sentenceArray.length; i++) {
-      if(vowels.indexOf(sentenceArray[i])>=0)
-      {sentenceArray[i] = "-"}
-
+      if(vowels.indexOf(sentenceArray[i])>=0) {
+        sentenceArray[i] = "-"
+        }
       }
-
       // if (sentenceArray[i] === "a" || sentenceArray[i] ===  "e"  || sentenceArray[i] ===  "i"  || sentenceArray[i] ===  "o"  || sentenceArray[i] ===  "u") {
       //   sentenceArray[i] = "-";
       // }
