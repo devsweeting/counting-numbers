@@ -1,6 +1,6 @@
 var array = [];
 
-
+var vowels = ["a",]
 // count numbers
 function countsByOne(userInputStop, userInputCount) {
   for (var i = 0; i <= userInputStop; i += userInputCount) {
@@ -12,9 +12,13 @@ function countsByOne(userInputStop, userInputCount) {
 function removeVowels(sentence) {
   var sentenceArray = sentence.split('');
     for (var i = 0; i < sentenceArray.length; i++) {
-      if (sentenceArray[i] === "a" || sentenceArray[i] ===  "e"  || sentenceArray[i] ===  "i"  || sentenceArray[i] ===  "o"  || sentenceArray[i] ===  "u") {
-        sentenceArray[i] = "-";
+      if(vowels.indexOf(sentence[i])>=0){
+
       }
+
+      // if (sentenceArray[i] === "a" || sentenceArray[i] ===  "e"  || sentenceArray[i] ===  "i"  || sentenceArray[i] ===  "o"  || sentenceArray[i] ===  "u") {
+      //   sentenceArray[i] = "-";
+      // }
     }
     console.log(sentenceArray);
     return sentenceArray.join('');
